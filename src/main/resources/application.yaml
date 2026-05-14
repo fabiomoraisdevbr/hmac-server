@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hmac
+
+
+
+security:
+  hmac:
+    secret: A3gjwTYXsuQ4EBLWzGfazFQ7bL4gGfg6VdubsuGsWgMwUAqkcbhP6kf8VBRHLPfyLx5aRyPuTGWM5LL2dx8oH6pvB29XrJobVafE
+    algorithm: HmacSHA512
