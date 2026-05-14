@@ -17,3 +17,7 @@ POST http://localhost:8080/message
   "timestamp": 1778738994371,
   "hash": "05544686019d9d6b10f530539e1e03d167ccc6311f4ffadac6565d8f4ee7446f97fc1a54dfcd4ec284b1ea6aa865620c0295518bdc51bc221a702ace112c4a16"
 }
+
+
+docker build -t minha-api .
+docker run -p 8080:8080 minha-api
