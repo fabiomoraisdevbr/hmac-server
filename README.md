@@ -56,7 +56,6 @@ Estação                          Servidor
 
 Mensagens com **timestamp superior a 15 minutos** são automaticamente rejeitadas com `401 Unauthorized`, impedindo que um atacante que interceptou uma mensagem legítima a reenvie posteriormente.
 
-> ⚠️ **Limitação atual:** a API ainda não implementa validação por **nonce** via Redis. Isso significa que a mesma mensagem pode ser reenviada múltiplas vezes dentro da janela de 15 minutos sem ser bloqueada. A integração com Redis para controle de unicidade de mensagens está prevista como próxima melhoria.
 
 ---
 
