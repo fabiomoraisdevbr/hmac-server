@@ -12,6 +12,7 @@
 ---
 
 ## 📌 Sobre o Projeto
+Instruções da atividade em [instrucoes.pdf](https://github.com/fabiomoraisdevbr/hmac-server/blob/main/Instrucoes.pdf)
 
 API REST desenvolvida como trabalho da disciplina de **Segurança e Auditoria de Sistemas** (TADS – IFPR), que simula uma **estação meteorológica** capaz de enviar dados climáticos de forma segura para um servidor central.
 
