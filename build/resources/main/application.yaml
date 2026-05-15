@@ -2,7 +2,11 @@ spring:
   application:
     name: hmac
 
-
+  data:
+    redis:
+      host: redis
+      port: 6379
+      password: zEAM39OcRcs1EI8xAY3UpF2mYQp41Gbj49mAYJL6mLcgRhc6G5
 
 security:
   hmac:
