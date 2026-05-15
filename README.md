@@ -5,7 +5,7 @@
 ![Java](https://img.shields.io/badge/Java_25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![HMAC](https://img.shields.io/badge/HMAC--SHA256-FF6B6B?style=for-the-badge&logo=security&logoColor=white)
+![HMAC](https://img.shields.io/badge/HMAC--SHA512-FF6B6B?style=for-the-badge&logo=security&logoColor=white)
 
 </div>
 
