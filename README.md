@@ -119,12 +119,14 @@ Valida uma mensagem autenticada recebida pelo servidor.
 ## 🐳 Executando com Docker
 
 ```bash
-# Clonar o repositório
-git clone https://github.com/fabiomoraiss/weather-station-hmac.git
-cd weather-station-hmac
+# criar rede e redis
+docker network create minha-rede
+docker run -d --name redis --network minha-rede redis:latest redis-server --requirepass zEAM39OcRcs1EI8xAY3UpF2mYQp41Gbj49mAYJL6mLcgRhc6G5
 
-# Subir a aplicação
-docker compose up --build
+#build e docker
+./gradlew build
+docker build -t minha-api .
+docker run --network minha-rede -p 8080:8080 minha-api
 ```
 
 A API ficará disponível em: `http://localhost:8080`
@@ -140,7 +142,7 @@ A API ficará disponível em: `http://localhost:8080`
 | **HMAC-SHA256** | Algoritmo de autenticação de mensagens |
 | **Docker / Docker Compose** | Containerização e execução |
 
----
+
 
 ## 📚 Contexto Acadêmico
 
