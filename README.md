@@ -26,7 +26,7 @@ A autenticidade e integridade das mensagens são garantidas através de **HMAC-S
 | Geração de mensagem autenticada com HMAC-SHA512 | ✅ Implementado |
 | Validação de mensagem no servidor | ✅ Implementado |
 | Proteção contra ataques de Replay (timestamp de 15 min) | ✅ Implementado |
-| Proteção contra replay com nonce via Redis (cache) | 🔜 Não implementado |
+| Proteção contra replay com nonce via Redis (cache) | ✅ implementado |
 
 ---
 
