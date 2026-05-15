@@ -19,8 +19,11 @@ POST http://localhost:8080/message
 }
 
 
+docker network create minha-rede
+docker run -d --name redis --network minha-rede redis:latest redis-server --requirepass zEAM39OcRcs1EI8xAY3UpF2mYQp41Gbj49mAYJL6mLcgRhc6G5
+
 mudar pra java 21
 ./gradlew build
 docker build -t minha-api .
-docker run -p 8080:8080 minha-api
+docker run --network minha-rede -p 8080:8080 minha-api
 
