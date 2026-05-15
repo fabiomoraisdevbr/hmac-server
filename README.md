@@ -15,7 +15,7 @@
 
 API REST desenvolvida como trabalho da disciplina de **Segurança e Auditoria de Sistemas** (TADS – IFPR), que simula uma **estação meteorológica** capaz de enviar dados climáticos de forma segura para um servidor central.
 
-A autenticidade e integridade das mensagens são garantidas através de **HMAC-SHA256** — um código de autenticação baseado em hash que impede adulteração dos dados em trânsito.
+A autenticidade e integridade das mensagens são garantidas através de **HMAC-SHA512** — um código de autenticação baseado em hash que impede adulteração dos dados em trânsito.
 
 ---
 
@@ -23,7 +23,7 @@ A autenticidade e integridade das mensagens são garantidas através de **HMAC-S
 
 | Funcionalidade | Status |
 |---|---|
-| Geração de mensagem autenticada com HMAC-SHA256 | ✅ Implementado |
+| Geração de mensagem autenticada com HMAC-SHA512 | ✅ Implementado |
 | Validação de mensagem no servidor | ✅ Implementado |
 | Proteção contra ataques de Replay (timestamp de 15 min) | ✅ Implementado |
 | Proteção contra replay com nonce via Redis (cache) | 🔜 Não implementado |
