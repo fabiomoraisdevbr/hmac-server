@@ -20,7 +20,7 @@ public class HmacOauthService {
 
     public Boolean oauth(WeatherStationMessage message, Long timestamp, String hash) {
         if(isMessageOverdue(timestamp) || cache.exists(hash)) {
-            System.out.println("Message is overdue or hash already used");
+            System.out.println("Mensagem antiga ou já recebida");
             return false;
         }
 
@@ -32,9 +32,10 @@ public class HmacOauthService {
 
         if(isOauth) {
             cache.save(hash);
+            System.out.println("Mensagem recebida com sucesso");
             return true;
         }
-
+        System.out.println("Menasgem com hash invalido");
         return false;
     }
 

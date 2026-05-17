@@ -18,7 +18,6 @@ public class HashCacheService {
     private static final Duration TTL = Duration.ofMinutes(15);
 
     public boolean exists(String hash) {
-        System.out.println("Checking if hash exists in cache: " + hash);
         return Boolean.TRUE.equals(
                 redisTemplate.hasKey(PREFIX + hash)
         );
@@ -33,7 +32,7 @@ public class HashCacheService {
                 TTL
         );
 
-        System.out.println("Hash saved to cache: " + hash);
+        System.out.println("Hash salvo no cache: " + hash);
     }
 
 }
